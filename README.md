@@ -8,4 +8,4 @@ how to collaborate:
     - $ git add .
     - $ git commit -m"description of feature"
     - $ git push origin fetaure/login_page
-  - done (I will merge yur work onto main branch)
+  - done (I will merge your work onto main branch)
