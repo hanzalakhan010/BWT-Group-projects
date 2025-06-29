@@ -5,7 +5,7 @@ how to collaborate:
     - $ git checkout -b feature/login_page
   - work on the feature
   - run 
-    $ git add .
-    $ git commit -m"description of feature"
-    $ git push origin fetaure/login_page
+    - $ git add .
+    - $ git commit -m"description of feature"
+    - $ git push origin fetaure/login_page
   - done (I will merge yur work onto main branch)
