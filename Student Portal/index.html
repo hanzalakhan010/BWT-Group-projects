@@ -13,11 +13,12 @@
 </body>
 
 </html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Portal</title>
-  <!-- <style>
+  <style>
     body {
       margin: 0;
       font-family: sans-serif;
@@ -52,8 +53,7 @@
       width: 95px;
       position: absolute;
       right: 30px;
-      
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     #menu a {
@@ -66,41 +66,74 @@
       padding: 8px 16px;
       cursor: pointer;
     }
-  </style> -->
+
+    nav {
+      position: fixed;
+      top: 0px;
+      z-index: 1000;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    nav> a{
+      text-decoration:none;
+      border: 1px solid black;
+      padding:5px;
+      color:black;
+      border-radius: 5px;
+    }
+    #menu{
+      position:fixed;
+      right: 0px;
+      top: 50px;
+      background-color: #f0f0f0;
+      display:flex;
+      flex-direction:column;
+    }
+  </style>
 </head>
+
 <body class="box">
-  <header >
-    <button>Menu</button>
-    <nav >
+  <header>
+    <nav>
       <a href="./dash.html" target="_self">Home</a>
-      <a href="user.html" target="_self">View Profile</a>
-      <a href="./login.html" target="_self">Logout</a>
+      <a href="./dash.html" target="_self">Grades</a>
+      <a href="./dash.html" target="_self">Assignments</a>
+      <button>Account</button>
+      <div id='menu'>
+        <a href="user.html" target="_self">View Profile</a>
+        <a href="./login.html" target="_self">Logout</a>
+      </div>
     </nav>
   </header>
 
-  
-  
-  <main >
+
+
+  <main>
 
     <h1>Student Portal</h1>
-     <div>
+    <div>
 
-       <p><b>Name</b> : student-name  </p>
-       <p><b>Roll Number</b> : roll-number</p>
-     </div>
+      <p><b>Name</b> : student-name </p>
+      <p><b>Roll Number</b> : roll-number</p>
+    </div>
 
-     <div>
+    <div>
       <h2>Courses</h2>
       <p>You invole in these courses</p>
       <ul>
-      <li>coruses-1</li>
-      
-      <li>coruses-2</li>
-    </ul>
-      
-     </div>
+        <li>coruses-1</li>
 
-     <div>
+        <li>coruses-2</li>
+      </ul>
+
+    </div>
+
+    <div>
       <h2>Attendance</h2>
       <table border="2" cellpadding="3">
         <thead>
@@ -118,17 +151,17 @@
             <td>40</td>
             <td>2</td>
           </tr>
-     
+
           <tr>
             <td>2</td>
             <td>coruses-2</td>
             <td>23</td>
             <td>1</td>
-     
+
           </tr>
-       
+
         </tbody>
-      
+
       </table>
 
     </div>
@@ -136,7 +169,7 @@
 
     <div>
       <h2>Exam </h2>
-      <table border="2" cellpadding="7" >
+      <table border="2" cellpadding="7">
         <thead>
           <tr>
             <th>S.No</th>
@@ -152,38 +185,40 @@
           </tr>
         </tbody>
       </table>
-     </div>
+    </div>
 
-     <div>
+    <div>
       <h2>Assigment</h2>
-      
+
       <h3>coruses-1 Assigment</h3>
-      
+
       <table border="3" cellpadding="6">
         <thead>
           <tr>
-        <th>#</th>
-        <th>Assigment</th>
-        <th>given date</th>
-        <th>death line</th>
-       </thead></tr>
-       <tbody>
-        <tr>
-        <td>1</td>
- 
-        <td>calculator</td>
-        <td>23-4-2005</td>
-        <td>23-5-2006</td>  
+            <th>#</th>
+            <th>Assigment</th>
+            <th>given date</th>
+            <th>death line</th>
+        </thead>
         </tr>
-        
-      </tbody>
- 
-      </table>
-     </div>
+        <tbody>
+          <tr>
+            <td>1</td>
 
-     
+            <td>calculator</td>
+            <td>23-4-2005</td>
+            <td>23-5-2006</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+
 
   </main>
 
- </body>
+</body>
+
 </html>
