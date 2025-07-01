@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Protol</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { 
-      ---primary: #2563EB; 
+    :root {
+      ---primary: #2563EB;
       ---secondary: #4F46E5;
       ---accent: #22D3EE;
-      ---bg: #F9FAFB; 
-      ---surface: #FFFFFF; 
-      ---text-dark: #111827; 
-      ---text-light: #F1F5F9; 
+      ---bg: #F9FAFB;
+      ---surface: #FFFFFF;
+      ---text-dark: #111827;
+      ---text-light: #F1F5F9;
     }
 
     body {
@@ -25,37 +26,38 @@
       color: var(---text-dark);
     }
 
-     header {
-        background-color:var(---primary);
-        padding: 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-      }
-      #menu {
-        display: none; 
-        position: absolute;
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        right: 10px;
-        top: 100px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        padding: 10px 0;
-        border-radius: 10px;
-      }
+    header {
+      background-color: var(---primary);
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+    }
 
-     nav a {
-        padding: 10px;
-        width: 200px;
-        color: rgb(185, 8, 8) ;
-        text-decoration: none;
-        font-weight: bold;
-      }
+    #menu {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      right: 10px;
+      top: 100px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
+      border-radius: 10px;
+    }
 
-      nav a:hover {
-        color:  #22d3ee;
-      }
+    nav a {
+      padding: 10px;
+      width: 200px;
+      color: rgb(185, 8, 8);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #22d3ee;
+    }
 
     button {
       display: flex;
@@ -71,16 +73,17 @@
     }
 
     button:hover {
-      background-color:  #22d3ee;
+      background-color: #22d3ee;
       color: black;
     }
+
     main {
       max-width: 10rem auto;
-      margin: 24px ;
+      margin: 24px;
       padding: 20px;
       background-color: var(---surface);
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     h1 {
@@ -125,26 +128,31 @@
     .edit:hover {
       background-color: var(---accent);
     }
-/*     
+
+    /*     
     article {
       margin-top: 15px;
     } */
     p {
       margin: 5px 1;
     }
+
     .head-titile {
-      background: linear-gradient(to right,var(---primary) ,rgb(0, 153, 255),var(---primary));
+      background: linear-gradient(to right, var(---primary), rgb(0, 153, 255), var(---primary));
       color: white;
     }
-    .stud-pic{
+
+    .stud-pic {
       width: 5000px;
-      border-radius: 50% ;
+      border-radius: 50%;
     }
-    .box{
+
+    .box {
       max-width: auto;
-      margin:   auto;
-      border: 9px  solid  #2563eb;
+      margin: auto;
+      border: 9px solid #2563eb;
     }
+
     .personal-info {
       margin-top: 20px;
     }
@@ -155,32 +163,29 @@
       gap: 16px;
     }
 
-    .info-grid  div {
-      flex: 1 1 45%;  
-      background: linear-gradient(to right,white,rgba(119, 191, 204, 0.295));
+    .info-grid div {
+      flex: 1 1 45%;
+      background: linear-gradient(to right, white, rgba(119, 191, 204, 0.295));
       padding: 10px 15px;
       border-radius: 6px;
       border: 1px solid #ddd;
       box-shadow: 1px 1px 1px 2px rgba(55, 109, 209, 0.664);
     }
-    .stud-pic{
-      width: 5000px;
-      border-radius: 50% ;
-    }
+
   </style> 
   </head>
   <body class="box">
        <header>
             <h1 class="head-titile">Student Portal</h1>
             
-            <button onclick="menubar()" ><img src="https://img.icons8.com/3d-fluency/30/menu.png" alt="menu"></button>
+            <button onclick="menubar()" ><img src="https://img.icons8.com/3d-fluency/34/menu.png" alt="menu"></button>
 
-                <nav id="menu" >
-                    <a href="./dashboard.html" target="_self">Home</a>
-                    <a href="user.html" target="_self">View Profile</a> 
-                    <a href="./login.html" target="_self">Logout</a> 
-                </nav>
-        </header>
+    <nav id="menu">
+      <a href="./dashboard.html" target="_self">Home</a>
+      <a href="user.html" target="_self">View Profile</a>
+      <a href="./login.html" target="_self">Logout</a>
+    </nav>
+  </header>
 
     <main >
         
@@ -188,7 +193,7 @@
       
       <figure>
           <h2>Student Picture</h2>
-          <img class="stud-pic" src="https://img.icons8.com/color//test-account.png" alt="student-image">
+          <img src="" alt="student-image">
       </figure>
         
       <section class="personal-info">
@@ -204,34 +209,24 @@
         </div>
       </section>
 
-        <h2>Student Data</h2>
-      <figure>
-              <h3>Matric marksheet</h3>
-          <img src="" alt="matric-marksheet">
-      </figure>
-        
-      <figure>
-          <h3>Intermediate marksheet</h3>
-          <img src="" alt="intermediate-marksheet">
-        </figure>
-      
-      </article>
+    <h2>Student Data</h2>
+    <figure>
+      <h3>Matric marksheet</h3>
+      <img src="" alt="matric-marksheet">
+    </figure>
 
-      <!-- <button src="./edit.html">edit</button>   -->
-      <a href="./edit.html" class="edit">Edit</a>
-    </main>
-    <script>
+    <figure>
+      <h3>Intermediate marksheet</h3>
+      <img src="" alt="intermediate-marksheet">
+    </figure>
 
-      function menubar(){
-        const menu = document.getElementById("menu");
-        if (menu.style.display === "none") {
-         menu.style.display = "block";
-        }
-        else {
-          menu.style.display = "none";
-        }
-      }
-    </script>
+    </article>
 
-  </body>
+    <!-- <button src="./edit.html">edit</button>   -->
+    <a href="./edit.html" class="edit">Edit</a>
+  </main>
+
+
+</body>
+
 </html>
