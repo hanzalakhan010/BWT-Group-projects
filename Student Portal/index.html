@@ -31,7 +31,7 @@
       box-shadow: 2px 2px 8px 9px lightgoldenrodyellow;
     }
 
-    .menu {
+    #menu {
       display: none;
       flex-direction: column;
       border: solid black;
@@ -78,19 +78,32 @@
       right: 0px;
       top: 50px;
       background-color: #f0f0f0;
-      display:flex;
-      flex-direction:column;
     }
   </style>
 </head>
-
+<script>
+  function menu(){
+    if (document.getElementById('menu').style.display === 'none') {
+      document.getElementById('menu').style.display = 'flex';
+    } else {
+      document.getElementById('menu').style.display = 'none';
+    }
+  }
+</script>
 <body class="box">
   <header>
     <nav>
+<<<<<<< HEAD
       <a href="./index.html" target="_self">Home</a>
       <a href="./index.html" target="_self">Grades</a>
       <a href="./index.html" target="_self">Assignments</a>
       <button>Account</button>
+=======
+      <a href="./dash.html" target="_self">Home</a>
+      <a href="./dash.html" target="_self">Grades</a>
+      <a href="./dash.html" target="_self">Assignments</a>
+      <button onclick="menu()">Account</button>
+>>>>>>> affdea0 (Refactor menu functionality: update menu ID, improve display logic, and enhance button interaction)
       <div id='menu'>
         <a href="user.html" target="_self">View Profile</a>
         <a href="./login.html" target="_self">Logout</a>
