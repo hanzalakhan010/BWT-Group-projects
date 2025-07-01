@@ -1,176 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Protol</title>
-  <style>
-    :root { 
-      ---primary: #2563EB; 
-      ---secondary: #4F46E5;
-      ---accent: #22D3EE;
-      ---bg: #F9FAFB; 
-      ---surface: #FFFFFF; 
-      ---text-dark: #111827; 
-      ---text-light: #F1F5F9; 
-    }
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Student Portal</title> 
+        <style> 
+        :root { 
+        ---primary: #2563EB; 
+        ---secondary: #4F46E5; 
+        ---accent: #22D3EE; 
+        ---bg: #F9FAFB; 
+        ---surface: #FFFFFF; 
+        ---text-dark: #111827; 
+        ---text-light: #F1F5F9; 
+        ---border: #CBD5E1;
+         }
 
-    body {
-      margin: auto;
-      font-family: 'Inter', sans-serif;
-      background-color: var(---bg);
-      color: var(---text-dark);
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(---bg);
+            color: var(---text-dark);
+            margin: 0;
+            padding: 0;
+        }
 
-     header {
-        background-color:var(---primary);
+        header {
+            background-color:var(---primary);
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        #menu {
+            display: none; 
+            position: absolute;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            right: 10px;
+            top: 100px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+
+        a {
+            padding: 10px;
+            width: 200px;
+        
+            color: rgb(185, 8, 8);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color:  #22d3ee;
+        }
+
+         button {
+            display: flex;
+            justify-content: center;
+            background-color: #3832a7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+        }
+
+        button:hover {
+            background-color:  #22d3ee;
+            color: black;
+        }
+
+        form {
+        max-width: auto;
+        background-color: var(---surface);
+        margin: 50px ;
         padding: 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-      }
-      #menu {
-        display: none; 
-        position: absolute;
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        right: 10px;
-        top: 100px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        padding: 10px 0;
-        border-radius: 10px;
-      }
+        border-radius: 8px;
+        box-shadow: 10px 4px 8px rgba(0,0,0,0.06);
+        }
 
-     nav a {
-        padding: 10px;
-        width: 200px;
-        color: rgb(185, 8, 8) ;
-        text-decoration: none;
-        font-weight: bold;
-      }
+         
+        h1 {
+            color: var(---secondary);
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
 
-      nav a:hover {
-        color:  #22d3ee;
-      }
+        h2 {
+            color: var(---primary);
+            margin-top: 15px;
+        }
 
-    button {
-      display: flex;
-      justify-content: center;
-      background-color: #3832a7;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 50px;
-      cursor: pointer;
-      position: absolute;
-      right: 10px;
-    }
+        h3 {
+            color: var(---primary);
+            margin-bottom: 5px;
+        }
 
-    button:hover {
-      background-color:  #22d3ee;
-      color: black;
-    }
-    main {
-      max-width: 10rem auto;
-      margin: 24px ;
-      padding: 20px;
-      background-color: var(---surface);
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
+        figure {
+            margin: 10px 0;
+        }
 
-    h1 {
-      color: var(---primary);
-      border-bottom: 2px solid var(---secondary);
-      padding-bottom: 5px;
-    }
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 2px solid var(---border);
+            border-radius: 4px;
+        }
+        
+        
+        p {
+            margin: 5px 0 3px;
+        }
 
-    h2 {
-      color: var(---primary);
-      margin-top: 23px;
-    }
+        input[type="text"], input[type="number"],input[type="email"] {
+            width: 99%;
+            padding: 7px;
+            margin-bottom: 16px;
+            border: 1px solid var(---border);
+            border-radius: 25px ;
+            font-size: 16px;
+            transition: 0.3s ease;
+            box-shadow: 1px 1px 1px 2px rgba(55, 109, 209, 0.664);
+        }
 
-    h3 {
-      color: var(---primary);
-    }
+        input:focus {
+            border-color: var(---primary);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
 
-    figure {
-      margin: 10px 0;
-    }
+        input[type="submit"] {
+            background-color: var(---primary);
+            color: white;
+            padding: 8px 15px;
+            font-size: 25px;
+            border: 2px solid;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto ;
+        }
 
-    img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border: 2px solid var(---primary);
-      border-radius: 4px;
-    }
+        input[type="submit"]:hover {
+            background-color: var(---accent);
+        }
+        input[type="file"]{
+            background-color: var(---primary);
+            color: white;
+            padding: 8px ;
+            font-size: 10px;
+            border: 2px solid;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            margin: 20px  ;
+            
+        }
 
-
-    .edit {
-      display: inline-block;
-      margin-top: 10px;
-      background-color: var(---primary);
-      color: white;
-      padding: 7px 12px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .edit:hover {
-      background-color: var(---accent);
-    }
-/*     
-    article {
-      margin-top: 15px;
-    } */
-    p {
-      margin: 5px 1;
-    }
-    .head-titile {
-      background: linear-gradient(to right,var(---primary) ,rgb(0, 153, 255),var(---primary));
-      color: white;
-    }
-    .stud-pic{
-      width: 5000px;
-      border-radius: 50% ;
-    }
-    .box{
-      max-width: auto;
-      margin:   auto;
-      border: 9px  solid  #2563eb;
-    }
-    .personal-info {
-      margin-top: 20px;
-    }
-
-    .info-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .info-grid  div {
-      flex: 1 1 45%;  
-      background: linear-gradient(to right,white,rgba(119, 191, 204, 0.295));
-      padding: 10px 15px;
-      border-radius: 6px;
-      border: 1px solid #ddd;
-      box-shadow: 1px 1px 1px 2px rgba(55, 109, 209, 0.664);
-    }
-    .stud-pic{
-      width: 5000px;
-      border-radius: 50% ;
-    }
-  </style> 
-  </head>
-  <body class="box">
-       <header>
+        article {
+            margin-top: 23px;
+        }
+        .head-titile {
+            background: linear-gradient(to right,var(---primary) ,rgb(0, 153, 255),var(---primary));
+            color: white;
+        }
+        .stud-pic{
+            width: 5000px;
+            border-radius: 50% ;
+        }
+        .box{
+            max-width: auto;
+            margin:   auto;
+            border: 9px  solid  #2563eb;
+        }
+        </style> 
+    </head>
+    <body class="box">
+        <header>
             <h1 class="head-titile">Student Portal</h1>
             
-            <button onclick="menubar()" ><img src="https://img.icons8.com/3d-fluency/30/menu.png" alt="menu"></button>
+            <button onclick="menubar()"><img src="https://img.icons8.com/3d-fluency/30/menu.png" alt="menu"></button>
 
                 <nav id="menu" >
                     <a href="./dashboard.html" target="_self">Home</a>
@@ -178,57 +194,67 @@
                     <a href="./login.html" target="_self">Logout</a> 
                 </nav>
         </header>
+        <form> 
+            <h1>Student Profile</h1>
 
-    <main >
-        
-        <h1>Student Profile</h1>
-      
-      <figure>
-          <h2>Student Picture</h2>
-          <img class="stud-pic" src="https://img.icons8.com/color//test-account.png" alt="student-image">
-      </figure>
-        
-      <section class="personal-info">
-        <h2>Personal Information</h2>
-        <div class="info-grid">
-          <div><strong>Full Name:</strong> John Doe</div>
-          <div><strong>Father's Name:</strong> Mr. Ali Raza</div>
-          <div><strong>Roll Number:</strong> 2023-CS-001</div>
-          <div><strong>Date of Birth:</strong> April 23, 2005</div>
-          <div><strong>CNIC / B-Form:</strong> 40401-5922132-1</div>
-          <div><strong>Email Address:</strong> john.doe@email.com</div>
-          <div style="max-width: 580px;"><strong>Phone Number:</strong> +92 311 1111111</div>
-        </div>
-      </section>
+            <figure>
+                <h2>Student Picture</h2>
+                <img  src="https://img.icons8.com/color/48/test-account.png" alt="student-image" class="stud-pic" />
+                <input type="file" >
+            </figure>
 
-        <h2>Student Data</h2>
-      <figure>
-              <h3>Matric marksheet</h3>
-          <img src="" alt="matric-marksheet">
-      </figure>
-        
-      <figure>
-          <h3>Intermediate marksheet</h3>
-          <img src="" alt="intermediate-marksheet">
-        </figure>
-      
-      </article>
+            <article>
+                <h2>Personal Information</h2>
+                
+                <p><b>Full Name:</b></p>
+                <input type="text" value="username" placeholder="Enter your Full Name" />
+                
+                <p><b>Father Name:</b></p>
+                <input type="text" value="f.name" placeholder="Enter your Father Name" />
+                
+                <p><b>Roll Number:</b></p>
+                <input type="number" value="205214" placeholder="Enter your Roll Number" />
+                
+                <p><b>Date Of Birth:</b></p>
+                <input type="text" value="23-5-2006" placeholder="Enter your Date of Birth" />
+                
+                <p><b>CNIC / B-Form:</b></p>
+                <input type="text" value="40213-3124214-2" placeholder="Enter your CNIC / B-Form" />
+                
+                <p><b>Email:</b></p>
+                <input type="email" value="abc@abc.com" placeholder="Enter your Email" />
+                
+                <p><b>Contact Number:</b></p>
+                <input type="text" value="0312 2334124" placeholder="Enter your Phone Number" />
+            </article>
 
-      <!-- <button src="./edit.html">edit</button>   -->
-      <a href="./edit.html" class="edit">Edit</a>
-    </main>
-    <script>
+            <article>
+                    <h2>Student Data</h2>
+                <figure>
+                    <h3>Matric Marksheet</h3>
+                    <img src="" alt="matric-marksheet" />
+                    <input type="file">
+                </figure>
+                <figure>
+                    <h3>Intermediate Marksheet</h3>
+                    <img src="" alt="intermediate-marksheet" />
+                    <input type="file">
+                </figure>
+            </article>
 
-      function menubar(){
-        const menu = document.getElementById("menu");
-        if (menu.style.display === "none") {
-         menu.style.display = "block";
-        }
-        else {
-          menu.style.display = "none";
-        }
-      }
-    </script>
+            <input type="submit" value="Submit" />
+        </form>
+        <script>
 
-  </body>
+             function menubar(){
+                const menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+            menu.style.display = "block";
+            }
+            else {
+                menu.style.display = "none";
+                }
+            }
+        </script>
+    </body> 
 </html>
