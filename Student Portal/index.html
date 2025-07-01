@@ -2,121 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal</title>
-</head>
-
-<body>
-    <a href='login.html'>Login</a>
-
-</body>
-
-</html>
-
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Portal</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
+      <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
 
-    .box {
-      background: linear-gradient(to right, rgba(60, 233, 126, 0.705), rgb(119, 147, 226));
-    }
+        .box {
+          background: linear-gradient(to right, rgba(60, 233, 126, 0.705), rgb(119, 147, 226));
+        }
 
-    .head-box {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 30px;
-      background-color: aqua;
-      border: 2px solid red;
-    }
+        .head-box {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 30px;
+          background-color: aqua;
+          border: 2px solid red;
+        }
 
-    .main-box {
-      border: 4px solid green;
-      padding: 40px;
-      margin: 30px;
-      box-shadow: 2px 2px 8px 9px lightgoldenrodyellow;
-    }
+        .main-box {
+          border: 4px solid green;
+          padding: 40px;
+          margin: 30px;
+          box-shadow: 2px 2px 8px 9px lightgoldenrodyellow;
+        }
 
-    #menu {
-      display: none;
-      flex-direction: column;
-      border: solid black;
-      background-color: transparent;
-      padding: 10px;
-      width: 95px;
-      position: absolute;
-      right: 30px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
+        .menu {
+          display: none;
+          flex-direction: column;
+          border: solid black;
+          background-color: transparent;
+          padding: 10px;
+          width: 95px;
+          position: absolute;
+          right: 30px;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    #menu a {
-      text-decoration: none;
-      color: black;
-      padding: 5px;
-    }
+        #menu a {
+          text-decoration: none;
+          color: black;
+          padding: 5px;
+        }
 
-    button {
-      padding: 8px 16px;
-      cursor: pointer;
-    }
+        button {
+          padding: 8px 16px;
+          cursor: pointer;
+        }
 
-    nav {
-      position: fixed;
-      top: 0px;
-      z-index: 1000;
-      box-sizing: border-box;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f0f0f0;
-      padding: 10px;
-    }
-    nav> a{
-      text-decoration:none;
-      border: 1px solid black;
-      padding:5px;
-      color:black;
-      border-radius: 5px;
-    }
-    #menu{
-      position:fixed;
-      right: 0px;
-      top: 50px;
-      background-color: #f0f0f0;
-    }
-  </style>
+        nav {
+          position: fixed;
+          top: 0px;
+          z-index: 1000;
+          box-sizing: border-box;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #f0f0f0;
+          padding: 10px;
+        }
+        nav> a{
+          text-decoration:none;
+          border: 1px solid black;
+          padding:5px;
+          color:black;
+          border-radius: 5px;
+        }
+        #menu{
+          position:fixed;
+          right: 0px;
+          top: 50px;
+          background-color: #f0f0f0;
+          display:flex;
+          flex-direction:column;
+        }
+      </style>
 </head>
-<script>
-  function menu(){
-    if (document.getElementById('menu').style.display === 'none') {
-      document.getElementById('menu').style.display = 'flex';
-    } else {
-      document.getElementById('menu').style.display = 'none';
-    }
-  }
-</script>
+
 <body class="box">
   <header>
     <nav>
-<<<<<<< HEAD
       <a href="./index.html" target="_self">Home</a>
       <a href="./index.html" target="_self">Grades</a>
       <a href="./index.html" target="_self">Assignments</a>
       <button>Account</button>
-=======
-      <a href="./dash.html" target="_self">Home</a>
-      <a href="./dash.html" target="_self">Grades</a>
-      <a href="./dash.html" target="_self">Assignments</a>
-      <button onclick="menu()">Account</button>
->>>>>>> affdea0 (Refactor menu functionality: update menu ID, improve display logic, and enhance button interaction)
       <div id='menu'>
         <a href="user.html" target="_self">View Profile</a>
         <a href="./login.html" target="_self">Logout</a>
