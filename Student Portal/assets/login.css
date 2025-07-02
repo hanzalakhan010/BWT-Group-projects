@@ -1,0 +1,32 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+    gap: 10px;
+  }
+
+  form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+input[type='submit'] {
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  a {
+    text-align: center;
+    color: #2563eb;
+    text-decoration: none;
+  }
